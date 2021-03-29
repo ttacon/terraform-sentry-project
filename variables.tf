@@ -56,9 +56,11 @@ variable "action_slack_channel_name" {
 variable "action_slack_channel_id" {
   description = "The ID of the Slack channel to post events to"
   type        = string
+  default     = ""
 }
 
 variable "action_slack_workspace_id" {
   description = "The ID of the Slack workspace to post events to"
   type        = string
+  default     = ""
 }

@@ -1,4 +1,5 @@
 resource "sentry_rule" "slack_notification" {
+  count        = var.has_slack_notification_rule ? 1 : 0
   name         = "Slack notifications"
   organization = var.organization
   project      = var.slug
