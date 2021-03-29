@@ -47,7 +47,7 @@ var (
 
 	// Slack flags if we can't determine rules on our own.
 	includeSlackRule = flag.Bool("include-slack", false, "Whether or not to include a CLI specified Slack rule")
-	slackChannelName = flag.String("slack-channel-name", "", "Slack channel name")
+	slackChannelName = flag.String("slack-channel-name", "#sentry", "Slack channel name")
 	slackChannelID   = flag.String("slack-channel-id", "", "Slack channel ID")
 	slackWorkspaceID = flag.String("slack-workspace-id", "", "Slack workspace ID")
 )
