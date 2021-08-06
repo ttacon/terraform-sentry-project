@@ -64,3 +64,9 @@ variable "action_slack_workspace_id" {
   type        = string
   default     = ""
 }
+
+variable "action_slack_alert_tags" {
+  description = "Event tags to display in slack notifications"
+  type        = list(string)
+  default     = []
+}

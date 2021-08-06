@@ -52,6 +52,14 @@ Type: `string`
 
 The following input variables are optional (have default values):
 
+### action\_slack\_alert\_tags
+
+Description: Event tags to display in slack notifications
+
+Type: `list(string)`
+
+Default: `[]`
+
 ### action\_slack\_channel\_id
 
 Description: The ID of the Slack channel to post events to

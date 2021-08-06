@@ -27,7 +27,7 @@ resource "sentry_rule" "slack_notification" {
       channel_id = var.action_slack_channel_id
       id         = "sentry.integrations.slack.notify_action.SlackNotifyServiceAction"
       name       = "Send a notification to the Mixmax Slack workspace to #sentry and show tags [] in notification"
-      tags       = ""
+      tags       = join(",", var.action_slack_alert_tags)
       workspace  = var.action_slack_workspace_id
     }
   ]
