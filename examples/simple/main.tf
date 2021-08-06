@@ -12,4 +12,5 @@ module "sentry_project" {
   # Extra configuration for the Slack event rule
   action_slack_channel_id   = "C4934F0F3"
   action_slack_workspace_id = "53846"
+  action_slack_alert_tags = ["user"]
 }
